@@ -1,7 +1,6 @@
 
 <?php
-// URL dasar aplikasi agar Frontend dan Backend dapat dipisahkan tanpa merusak tautan.
-// Deteksi otomatis nama folder project (mis. /JerMateChessAcademy).
+
 if (!defined('PROJECT_URL')) {
     $scriptPath = str_replace('\\\\', '/', $_SERVER['SCRIPT_NAME'] ?? '');
     $backendMarker = strpos($scriptPath, '/Backend');

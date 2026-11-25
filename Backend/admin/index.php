@@ -7,9 +7,6 @@ require __DIR__ . '/../includes/admin_layout.php';
 
 $u = require_role('admin');
 
-// ==========================================
-// 1. DATA JUMLAH SETIAP TABEL
-// ==========================================
 
 $tables = [
     'peserta'      => 'Peserta',
@@ -34,9 +31,7 @@ foreach ($tables as $table => $label) {
 }
 
 
-// ==========================================
-// 2. PENDAFTARAN TERBARU
-// ==========================================
+/* Untuk  bagian Pendaftaran */
 
 $recent = $db->query("
     SELECT
@@ -59,9 +54,7 @@ $recent = $db->query("
 ");
 
 
-// ==========================================
-// 3. STATISTIK STATUS PENDAFTARAN
-// ==========================================
+/*Bagian Status Pendaftaran*/
 
 $status = $db->query("
     SELECT
@@ -82,17 +75,13 @@ foreach ($status as $item) {
 }
 
 
-// ==========================================
-// 4. HEADER DASHBOARD
-// ==========================================
+
 
 admin_header('Dashboard Admin', $u);
 
 ?>
 
-<!-- ======================================
-     WELCOME SECTION
-======================================= -->
+
 
 <section class="welcome">
 
@@ -117,9 +106,7 @@ admin_header('Dashboard Admin', $u);
 </section>
 
 
-<!-- ======================================
-     STATISTIK DATA
-======================================= -->
+
 
 <section class="stats">
 
@@ -146,9 +133,7 @@ admin_header('Dashboard Admin', $u);
 </section>
 
 
-<!-- ======================================
-     DASHBOARD CONTENT
-======================================= -->
+
 
 <div class="dashboard-grid">
 
@@ -268,9 +253,7 @@ admin_header('Dashboard Admin', $u);
 </div>
 
 
-<!-- ======================================
-     AKSES CEPAT
-======================================= -->
+<!-- Bagian akses Cepat -->
 
 <section class="panel">
 
@@ -327,9 +310,6 @@ admin_header('Dashboard Admin', $u);
 
 <?php
 
-// ==========================================
-// 5. FOOTER DASHBOARD
-// ==========================================
 
 admin_footer();
 

@@ -1,16 +1,7 @@
 
 <?php
 
-/**
- * =========================================================
- * JERMATE CHESS ACADEMY
- * ADMIN LAYOUT
- * =========================================================
- */
 
-/**
- * Menampilkan header dan sidebar admin.
- */
 function admin_header(string $title, array $user): void
 {
     // Mengambil nama file halaman yang sedang dibuka
@@ -96,9 +87,6 @@ function admin_header(string $title, array $user): void
 
 <div class="app-shell">
 
-    <!-- =========================================
-         SIDEBAR
-    ========================================== -->
 
     <aside class="sidebar">
 
@@ -170,9 +158,6 @@ function admin_header(string $title, array $user): void
     </aside>
 
 
-    <!-- =========================================
-         MAIN CONTENT
-    ========================================== -->
 
     <main class="main-area">
 
@@ -213,10 +198,6 @@ function admin_header(string $title, array $user): void
 <?php
 }
 
-
-/**
- * Menutup struktur layout admin.
- */
 function admin_footer(): void
 {
 ?>
