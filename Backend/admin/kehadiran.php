@@ -1,0 +1,1 @@
+<?php $_GET['entity']='kehadiran'; require __DIR__.'/manage.php'; ?>

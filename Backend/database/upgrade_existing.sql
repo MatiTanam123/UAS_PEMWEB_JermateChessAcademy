@@ -1,0 +1,2 @@
+-- Migrasi otomatis dari skema lama tidak disediakan karena tipe ID dan nama kolom berbeda.
+-- Backup database lama, buat database baru, lalu import schema.sql.

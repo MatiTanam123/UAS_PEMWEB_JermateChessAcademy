@@ -1,0 +1,1 @@
+<?php $_GET['entity']='jadwal'; require __DIR__.'/manage.php'; ?>

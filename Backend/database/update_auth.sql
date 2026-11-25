@@ -1,0 +1,3 @@
+-- Tidak diperlukan untuk ERD terbaru.
+-- Gunakan database/schema.sql pada database kosong.
+-- Kolom autentikasi pada ERD terbaru adalah admin.password dan peserta.password.

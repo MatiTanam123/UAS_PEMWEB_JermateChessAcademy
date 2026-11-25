@@ -1,0 +1,1 @@
+<?php $_GET['entity']='galeri'; require __DIR__.'/manage.php'; ?>

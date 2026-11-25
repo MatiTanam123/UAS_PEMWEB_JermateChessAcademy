@@ -1,0 +1,1 @@
+<?php $_GET['entity']='peserta'; require __DIR__.'/manage.php'; ?>

@@ -1,0 +1,1 @@
+<?php $_GET['entity']='notifikasi'; require __DIR__.'/manage.php'; ?>
